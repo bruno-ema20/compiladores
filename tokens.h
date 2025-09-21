@@ -15,6 +15,7 @@ typedef enum {
     PR_FALSE,       // false / FALSE
     PR_NULL,        // null / NULL
     EOF_TOKEN,      // Fin de archivo
+    NEWLINE,        // salto de linea
     ERROR_TOKEN     // Token no válido
 } TokenType;
 

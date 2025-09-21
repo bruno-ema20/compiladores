@@ -7,9 +7,10 @@
 TokenType reconocerToken(FILE *fuente, char *lexema) {
     int c;
 
-    // Ignorar espacios en blanco
+    // Ignorar espacios en blanco excepto saltos de línea
     do {
         c = fgetc(fuente);
+        if (c == '\n') return NEWLINE;  
     } while (isspace(c));
 
     // Fin de archivo

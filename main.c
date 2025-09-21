@@ -28,6 +28,7 @@ int main() {
             case PR_TRUE: fprintf(salida, "PR_TRUE "); break;
             case PR_FALSE: fprintf(salida, "PR_FALSE "); break;
             case PR_NULL: fprintf(salida, "PR_NULL "); break;
+            case NEWLINE: fprintf(salida, "\n"); break;
             case ERROR_TOKEN: fprintf(salida, "ERROR "); break;
             default: break;
         }
